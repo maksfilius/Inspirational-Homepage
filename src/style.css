@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: gray;
+}
+
+/* Background */
+
+.main-content {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    filter: blur(5px);
+    z-index: -1;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.backgroung-image {
+    object-fit: cover;
+    width: 100%;
+    min-height: 100%;
+    animation: fade 5s linear infinite;
+    animation-delay: 2.5s;
+}
+
+@keyframes fade {
+    0% { opacity: 1 }
+    50% { opacity: 0.3 }
+    100% { opacity: 1 }
+}
+
+/* Weather */
+
+.header {
+    padding: 20px;
+    display: flex;
+    justify-content: end;
+    transition: all 0.5s ease
+}
+
+.weather {
+    display: none;
+}
+
+.weather_input {
+    width: 250px;
+    background: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.city {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.city_btn {
+    margin: 15px;
+    padding: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 15px;
+    color: gray;
+}
+
+.city_btn:hover {
+    opacity: .6;
+}
+
+.weather_items {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.temperature {
+    text-align: center;
+    font-size: 70px;
+    color: white;
+    align-items: center;
+}
+
+.description {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+/* ToDo List */
+
+.surface_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.surface {
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 20px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: white;
+    border-radius: 15px;
+}
+
+.surface_goals {
+    background: rgba(255, 255, 255, 0.5);
+    margin: 20px 30px;
+    font-size: 30px;
+    color: white;
+    border-radius: 15px;
+}
+
+.input {
+    background: 0;
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid white;
+    color: white;
+    width: 100%;
+    font-size: 25px;
+}
+
+.input_city {
+    background: 0;
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid white;
+    color: white;
+    width: 100%;
+    font-size: 25px;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    list-style: none;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.buttons {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    display: flex;
+    transition: opacity 0.1s ease-in;
+    opacity: 0;
+}
+
+.btn {
+    padding: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: white;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.remove_btn {
+    background-color: rgb(209, 38, 38, .8);
+}
+
+.done_btn {
+    background-color: rgba(42, 171, 19, 0.8);
+}
+
+.delete {
+    display: none;
+}
+
+.done {
+    background: rgba(155, 155, 155, 0.25);
+    opacity: 0.25;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspirational Homepage</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- Background -->
+
+    <div class="main-content">
+        <img class="backgroung-image">
+    </div>
+
+    <!-- Weather -->
+
+    <header class="header">
+        <div class="weather">
+            <p class="city"></p>
+            <div class="weather_items">
+                <div class="weather_icon">
+                    <img class="icon"/>
+                </div>
+                    <p class="temperature"></p>
+            </div>
+            <p class="description"></p>
+        </div>
+        <div class="weather_input" >
+            <form action="">
+                <input type="text" class="input_city" maxlength="30" placeholder="Enter your city" required>
+                <input type="submit" class="city_btn" value="check a current weather"/>
+            </form>
+        </div>
+    </header>
+
+    <!-- ToDo List -->
+    
+    <div class="surface_main">
+        <div class="surface">
+            <p>Your plans for today</p>
+            <input type="text" class="input" maxlength="40">
+        </div>
+        <div class="surface_goals">
+            <ul></ul>
+        </div>
+    </div>
+<script src="./main.js"></script>
+</body>
+</html>
