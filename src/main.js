@@ -24,7 +24,7 @@ async function showImage() {
 
 showImage()
 
-// setInterval(() => showImage(), 5000);
+setInterval(() => showImage(), 5000);
 
 // ToDo List ==================================
 
